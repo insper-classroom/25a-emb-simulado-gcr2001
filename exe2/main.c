@@ -20,12 +20,12 @@
  
  volatile int time_init1 = 0;
  volatile int time_end1 = 0;
- volatile bool timeout_fired1 = false;
+ volatile alarm_id_t timeout_fired1;
  volatile bool measuring1 = false;
  
  volatile int time_init2 = 0;
  volatile int time_end2 = 0;
- volatile bool timeout_fired2 = false;
+ volatile alarm_id_t timeout_fired2;
  volatile bool measuring2 = false;
  
  const int TIMEOUT_US = 30000;
